@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    background: hsl(217, 54%, 11%);
+    font-family:  'Outfit', sans-serif;
+    font-size: 18px;
+}
+.card{
+    margin: 0 auto;
+    box-shadow: 2px 3px 37px 5px rgba(0,0,0,0.75);
+    width: 400px;
+    margin-top: 150px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.title{
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    margin-right: 100px;
+}
+.nft{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 37px 5px rgba(0,0,0,0.75);
+}
+.container{
+    position: relative;
+}
+.container div{
+    position: absolute;
+    left:0;
+    top:0;
+    background:hsl(178, 100%, 50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+.container div img{
+    width: 5rem;
+    height: 5rem;
+}
+.container div:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+.description{
+    font-size: 1.5rem;
+    color: hsl(215, 51%, 70%);
+    margin: -10px 0 0 14px;
+}
+.info{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.price{
+    height: 1rem;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    font-size: 1.3rem;
+}
+.price img{
+    line-height: 1rem;
+    margin-right: 5px;
+}
+.days{
+    height: 1rem;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.days img{
+    margin-right: 5px;
+    line-height: 1rem;
+}
+.owner{
+    border-top: 1px solid hsl(215, 51%, 70%);
+    width: 90%;
+    padding-top: 20px;
+    line-height: 100%;
+}
+.owner img{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 2.7rem;
+}
+.owner p{
+    color: hsl(215, 51%, 70%);
+    margin: -33px 0 0 70px;
+}
+.owner p  span{
+    color: white;
+    transition: color 500ms;
+}
+.owner p  span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.attribution{
+    margin-top: 40px;
+    font-size: 20px;
+}
+@media screen and (max-width: 667px){
+    .card{
+        transform: scale(0.5);
+        transition: all 500ms;
+    }
+}
